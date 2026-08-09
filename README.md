@@ -15,7 +15,7 @@ A gerência da aplicação inicialmente atua em rede local com característica d
 
 mavem: (Patch:[JAVA_HOME . M2_HOME])
 on:
-main: /home/ovni/htdocs/Site_Gostar
+main: /ovni/home/htdocs/Site_Gostar
 
 push: Site_Gostar@localhost
 
@@ -33,9 +33,8 @@ location: @localhost
 <modules>
 <parent xmlns="https://Site_Gostar.com"
             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
-            https://Site_Gostar.com local_schema.xsd">
-            <child>./home/ovni/htdocs/Site_Gostar
+            xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd" https://Site_Gostar.com local_schema.xsd">
+            <child>./ovni/home/htdocs/Site_Gostar
 </child>
 <packaging>pom</packaging>
             <modelVersion>4.0.0</modelVersion>
