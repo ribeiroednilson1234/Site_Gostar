@@ -15,7 +15,7 @@ A gerência da aplicação inicialmente atua em rede local com característica d
 
 mavem: (Patch:[JAVA_HOME . M2_HOME])
 on:
-main: /var/www/html/Site_Gostar
+main: /home/ovni/htdocs/Site_Gostar
 
 push: Site_Gostar@localhost
 
