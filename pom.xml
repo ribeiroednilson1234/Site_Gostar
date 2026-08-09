@@ -12,6 +12,25 @@
 </repositories>
 
 <build>
+           <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>3.4.0</version>
+        <configuration>
+           [...]
+           <modules>
+             <jarModule>
+               <groupId>artifactGroupId</groupId>
+               <artifactId>artifactId</artifactId>
+               <includeInApplicationXml>true</includeInApplicationXml>
+             </jarModule>
+          </modules>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
