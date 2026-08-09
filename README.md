@@ -28,19 +28,20 @@ region: Brazil
 location: @localhost
 
 [pom.xml]
+<project>
 <?xml version="1.0" encoding="UTF-8"?>
-    <modules>
-        <parent xmlns="https://Site_Gostar.com"
+<modules>
+<parent xmlns="https://Site_Gostar.com"
             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
             https://Site_Gostar.com local_schema.xsd">
-            <child>./var/www/html/Site_Gostar
+            <child>./home/ovni/htdocs/Site_Gostar
 </child>
-            <packaging>pom</packaging>
+<packaging>pom</packaging>
             <modelVersion>4.0.0</modelVersion>
             <grouId>com.Site_Gostar</grouId>
             <artifactId>Site_Gostar</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </parent>
-    </modules>
+<version>1.0-SNAPSHOT</version>
+</parent>
+</modules>
 </project>
