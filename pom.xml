@@ -30,9 +30,8 @@
         xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
         https://Site_Gostar.com local_schema.xsd">
         <child>./ovni/home/htdos/Site_Gostar</child>
-
-<groupId>com.Site_Gostar</groupId>
-<artifactId>Site_Gostar</artifactId>
-<version>1.0-SNAPSHOT</version>
+        <groupId>com.Site_Gostar</groupId>
+        <artifactId>Site_Gostar</artifactId>
+        <version>1.0-SNAPSHOT</version>
 </modules>
 </project>
