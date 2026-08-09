@@ -29,4 +29,4 @@
         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
         https://Site_Gostar.com local_schema.xsd">
-        <child>./var/www/html/Site_Gostar
+        <child>./var/www/html/Site_Gostar </child>
