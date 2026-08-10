@@ -34,12 +34,11 @@ location: @localhost
 <parent xmlns="https://Site_Gostar.com"
             xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd" https://Site_Gostar.com local_schema.xsd">
-            <child>./ovni/home/htdocs/Site_Gostar
+            <child>.home/ovni/htdocs/Site_Gostar
 </child>
 <packaging>pom</packaging>
             <modelVersion>4.0.0</modelVersion>
-            <grouId>com.Site_Gostar</grouId>
-            <artifactId>Site_Gostar</artifactId>
+            <grouId>com.Site_Gostar</grouId>           <artifactId>Site_Gostar</artifactId>
 <version>1.0-SNAPSHOT</version>
 </parent>
 </modules>
