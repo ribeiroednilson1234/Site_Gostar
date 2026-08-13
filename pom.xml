@@ -1,59 +1,18 @@
-ci
-on:
-main: Site_Gostar
-pushe: ["Principalribeiroednilson1234-Site_Gostar"]
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-<repositories>
-    <repository>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-    </repository>
-</repositories>
-
-<build>
-           <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-ear-plugin</artifactId>
-        <version>3.4.0</version>
-        <configuration>
-           [...]
-           <modules>
-             <jarModule>
-               <groupId>artifactGroupId</groupId>
-               <artifactId>artifactId</artifactId>
-               <includeInApplicationXml>true</includeInApplicationXml>
-             </jarModule>
-          </modules>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-            <configuration>
-                <source>${java.version}</source>
-                <target>${java.version}</target>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
-<modules>
-    <parent xmlns="https://Site_Gostar.com"
-        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
-        https://Site_Gostar.com local_schema.xsd">
-        <child>home/ovni/htdos/Site_Gostar</child>
-        <groupId>com.Site_Gostar</groupId>
-        <artifactId>Site_Gostar</artifactId>
-        <version>1.0-SNAPSHOT</version>
-</modules>
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modules>
+        <parent xmlns="https://Site_Gostar.com"
+            xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation=https://Site_Gostar.com local_schema.xsd"
+            https://Site_Gostar.com local_schema.xsd">
+            <child>./var/www/html/Site_Gostar
+</child>
+            <packaging>pom</packaging>
+            <modelVersion>4.0.0</modelVersion>
+            <grouId>com.Site_Gostar</grouId>
+            <artifactId>Site_Gostar</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <description>https://Site_Gostar@olocalhost:3306</description>
+        </parent>
+    </modules>
 </project>
