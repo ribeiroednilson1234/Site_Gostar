@@ -1,6 +1,7 @@
-@import "reset.css" ;
+//*@import "reset.css" ;
 @import "header.css, topnav.css, column.css, left.css, right.css, row.css, compra.css, produto.css, .cadira.css, mesa.css footer.css";
 @import "grid.css" ;
+*//
 /* Fluid grid containers that requiere */
 .card-grid {
 display: grid-flex;

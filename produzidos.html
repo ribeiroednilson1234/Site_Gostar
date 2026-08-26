@@ -1,0 +1,91 @@
+<!Doctype html>
+<html-PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"lang="pt-br, ISO 639-standard">
+<head>
+<script>
+str = str.replace(/\<\/script>/g, encodeURIComponent(String("\n")));
+function = window.alert(Bem vindo !\nEsteja atento para as informaçoes no formulário de inserção de produtos para o estoque.\n Não esqueça de sempre escolher o código correto e o medelo do produto.\nEstas informações serão pedidas no ato da inserção do produto pelo formlário da fábrica.);
+</script>
+<meta properly="Ednilson Alves"author="Ednilson Alves Ribeiro"content="HTML, CSS, PHP, MySQL, JavaScript">
+<meta http-equiv="X-UA-Compatible"Content="IE-edge, Chrome, Firefox, Ópera, Brave">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" litype="text/css" href="Site_Gostar/Fabrica/fabricafolha.css" media="all" />
+<title>mgmt_PROUDUZIDOS.tpl</title>
+</head>
+<body>
+	<header><img src="foto4.png"width="50px"height="50px"><h6>DENTRO DA FÁBRICA</h6></header>
+<div class=".topnav">
+	<nav>
+		<ul>
+			<li><a href="Site_Gostar/Fabrica/fábrica.html">DENTRO DA FÁBRICA</a></li>
+			<li><a href="Site_Gostar/Fabrica/estoque.html">ESTOQUE</a></li>
+			<li><a href="Site_Gostar/Fabrica/balanço.html">BALANÇO</a></li>
+		</ul>
+	</nav>
+</div>
+<div class=".column">
+<div class=".column .left">
+	<article><h3>ARTIGOS - ESPAÇO RESERVADO PARA A EQUIPE DE DESIGN<h3>
+	  <div class=".img">
+	  <figure>
+	    <img src="Site_Gostar/Fabrica/foto1.jpeg"width="100px"height="150px">
+	      <figcaption>IMAGEM DE FÁBRICA</figcaption></img>
+		  <img src="Site_Gostar/Fabrica/foto2.jpeg"width="100px"height="150px">
+	      <figcaption>IMAGEM  DE FÁBRICA</figcaption></img>
+		  <img src="Site_Gostar/Fabrica/foto3.jpeg"width="100px"height="150px">
+	      <figcaption>IMAGEM DE FÁBRICA</figcaption></img>
+	  </figure>
+	  </div>
+</article>
+</div>
+<div class=".column .middle">
+	<section><h3>SEÇAO - ESTAS INFORMAÇÕES SÃO PARA A EQUIPE DE PRODUÇÃO E SUPREVISÃO DE PRODUTOS</h3>
+  <div class="column.middle">
+    <div class=".row.compra">
+<caption>RECEBE INFORMAÇÕES DOS PRODUTOS PRODUZIDOS. 
+    <fieldset><legend><h3>PRODUTOS FABRICADOS</h3></legend>
+    <form method="get" name="Produzidos" id="produzidos_id" action="produzidos.php" . action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data">
+    	    <hr><fieldset><legend>CADASTRO DE MÓVEIS PRODUZIDOS</legend>
+    	    <br><label>QUANTIDADE DE CADEIRAS PRODUZIDAS</label></br>
+    	    <input type="text"name="Cadeira_id"action="produzidos.php"maxlength="7"size="50px" required/></br>
+    	    <label>QUANTIDADE DE MESAS PRODUZIDAS</lable></br>
+    	    <input type="text"name="Mesa_id"action="produzidos.php"maxlength="4"size="50px"  required/></br>
+    	    <label>QUANTIDADE DE CONJUNTOS PRODUZIDOS</label></br>
+    	    <input type="text"name="Conjunto_id"action="produzidos.php"maxlength="8"size="50px"  required/></br>
+    	    <label>CUSTO DE PRODUÇÃO</label></br>
+    	    R$<input type="text" id="money" name="Custo_da_produção_id"action="produzidos.php"maxlength="18"size="50px"  required/></br>
+    	    <label>PREÇO DE VENDA</label></br>
+    	    R$<input type="text" id="money" name="Preço_da_venda_id"action="produzidos.php"maxlength="14"size="50px" required/></br>
+    	 </fieldset>
+    	 <hr>
+    </form>
+ </caption>
+  </div>
+  </div>
+  <caption>
+  CRIAR O ARQUIVO PHP.
+  <h2>TRANSFERÊNCIA DE INFORMAÇÃO PARA O ESTOQUE DO GOSTAR FABRICA</h2>
+      <form method="post" name="Estocados" id="estocados_id" action="inserirestoque.php" . action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data">
+        <hr><fieldset><legend>CADASTRO DE MÓVEIS PARA O ESTOQUE</legend>
+    	    <br><label>( CADEIRA ) QUANTIDADE PRODUZIDA</label></br>
+    	    <input type="text"name="Cadeira"action="estocados.php"maxlength="7"size="50px" required/></br>
+    	    <label>( MESA ) QUANTIDADE PRODUZIDA</lable></br>
+    	    <input type="text"name="Mesa"action="estocados.php"maxlength="4"size="50px"  required/></br>
+    	    <label>( CONJUNTO ) QUANTIDADE PRODUZIDA</label></br>
+    	    <input type="text"name="Conjunto"action="estocados.php"maxlength="8"size="50px"  required/></br>
+    	    <label>PREÇO DA PRODUÇÃO</label></br>
+    	    R$<input type="text" id="money" name="Preço_da_produção"action="estocados.php"maxlength="18"size="50px"  required/></br>
+    	    <label>PREÇO DE VENDA</label></br>
+    	    R$<input type="text" id="money" name="Total_vendidos"action="estocados.php"maxlength="14"size="50px" required/></br>
+            </fieldset></br>
+            <input type="submit" id="Estocados_id" value="Enviar informação para o estoque" action="inserirestoque.php"></br>
+        <br><input type="reset" value="Limpar campos do formulário para envido de nova informação">
+      </form>
+      </caption>
+</section>
+</div>
+<div class=".side .footer" >
+	<footer><h1>PRODUÇÃO DE MÓVEIS ARTESANAIS - ESPECÍFICO PARA A FÁBRICA</h1></footer>
+</div>
+</body>
+</html>
