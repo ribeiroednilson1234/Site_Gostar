@@ -16,7 +16,7 @@ SERVER["REQUEST_METHOD] == "("POST") => { $msg = $_POST[('response')]; . htmlspe
 <head>
 <meta charset="utf-8">
 <title>Produtos_Vendidos.tpl</title>
-<link rel="stylesheet" type="text/css" href="Site_Gostar/folha.css" media="all">
+<link rel="stylesheet" type="text/css" href="Site_Gostar/folha.css" media="all" />
 </head>
 <body>
 <caption>
