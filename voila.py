@@ -48,7 +48,7 @@ def page_config_hook(
    current_page_config: Dict[str, Any],
    base_url: str,
    settings: Dict[str, Any],
-   log: Logger,
+   log: Logger, 
    voila_configuration: VoilaConfiguration,
    notebook_path: str
 ):
@@ -68,10 +68,9 @@ config.prelaunch_hook = parameterize_with_papermill
 config.page_config_hook = page_config_hook
 
 # create a voila instance
-app = Voila(Site_Gostar)
+app = Voila('Site_Gostar')
 
 # set the config
-app.voila_configuration = config
-
+app.voila_configuration = config view --port PORT --h HOST --force-index --strict-indexing --silent --depurar -1 REGISTRADOR --server-web{waitress,gunicorn,flash}
 # launch
-app.start(Site_Gostar)
+app.start('Site_Gostar.html')
