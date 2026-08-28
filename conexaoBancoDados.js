@@ -1,3 +1,4 @@
+<%
 package banco_dados;
 
 import java .sql.*;
@@ -1170,4 +1171,4 @@ public class Colaborador {
 			return null;
 		}
 	}	
-}
+}%>
