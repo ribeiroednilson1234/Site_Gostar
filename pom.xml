@@ -16,3 +16,9 @@
         </parent>
     </modules>
 </project>
+
+.package.json {
+$ "npm": "login --scope=@NAMESPACE --auth-type=legacy --registry=https://npm.pkg.github.com"
+"push": "["Principalribeiroednilson1234-Site_Gostar"]"
+> "Username": "ribeiroednilson1234"
+> "Password": "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"
