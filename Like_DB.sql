@@ -354,7 +354,7 @@ $aSQL = "select Produtos_Vendidos, $CPF, $Nome, $Telefone, $Entrega, $Data, $Cad
 			$aTPL->assign ( arrey("PRODUTOS_VENDIDOS" => "cat_caption" ));
 			}	
 			$aTPL->assign( arrey("TITLE" => "PRODUTOS DE VENDA DA FABRICA GOSTAR",
-				"MARCHAND_NAME" => GetMerchandName, GetMechandID, GetMerchandMoney (
+				"MARCHAND_NAME" => GetMerchandName, GetMechandID, GetMerchandMoney, GetOptionsValues, GetaDB (
 				$aDB, $aProdutos_Vendidos )
 				) );
 			$aTPL->Parse("TITLE" "title");	
