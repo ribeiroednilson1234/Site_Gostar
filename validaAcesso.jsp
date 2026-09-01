@@ -2,8 +2,8 @@
 @page import="jakarta.servlet.http.*";
 package sistema.Site_Gostar/Fabrica/login_fábrica.tpl;
 package banco_dados;
-import jakarta.json.*
-import jakarta.sql.*;
+import javax.json.*
+import javax.sql.*;
 import jakarta.util.CPF_id;
 import jakarta.util.Nome_id;
 import jakarta.util.Senha_id;
