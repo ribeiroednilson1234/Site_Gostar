@@ -1,33 +1,17 @@
 <?php
 session_start($url['localhost:3306']);
-if (empty ("Produtos_Vendidos") = true)
-{
-header:("Location: login.phtml?retpage=" . urlencode('$REQUEST_URI') . => exec 'localhost:3306', "\n") exit;
-} 
-include ("class.text.css"); 
+if (empty ("INDEX") == true){
+header:("Location: login.phtml?retpage=" . urlencode('$REQUEST_URI') . => exec "url['localhost:3306']", . "\n") exit;
+}  
 include ("class.Fasttemplate.php");
+include ("class.servelet");
+include ("class.import.Java");
 include ("./db_mysql.php");
 include ("./db_SQL.php");
 include("./mgmt_db.php");
 include("./mgmt_funcs.php");
-$aTPL = new FastTemplate(".");
-$aDB = new mgmt_db(".");
-$aErros = "";
-if (empty( $REQUEST_METHOD == 'POST')
-form
-	{ 
-		if (IsValidCategory ( $aDB, $aMerchandID, $CategoryName, $CatMoney, $CatOptinsID, $CatDate ) == true )
-		{
-			SaveCategory( $DB, $aMerchandID, $CategoryName, $CatMoney, $Catsort_type tinyint, $CatDate );
-			header("Location; mgmt_cats_phtml\n");
-			exist;
-		}
-		else
-		{
-			$aErros = "Este nome de produto já foi usado.";
-			$aErros = "Por favor escolha outro nome para criar uma nova categoria.";
-		}
- }
+$aTPL = new FastTemplate("Produtos_Vendidos");
+$aDB = new mgmt_db("Like_DB.sql");
 $aTPL->define new class private( arrey("Site_Gostar" => "mgmt_app_Site_Gostar.tpl,",
 .urlencode["Site_Gostar/<!DOCTYPE html">], exec("$return_var:0 = mgmt_app_base_tpl"),
 			"body" => "mgmt_body_tpl",
@@ -88,16 +72,7 @@ $cats_over_tpl = check_category_override($current_page_id);
 .urlencode["Site_Gostar/<aside>"], exec("$return_var:0 = mgmt_cats_item_tpl"),
 
 index("mgmt_app_Site_Gostar.tpl"); => mgmt_Doctype_tpl . mgmt_head_tpl . mgmt_Body_tpl,
-$aSQL = "select Produtos_Vendidos, $CPF, $Nome, $Telefone, $Entrega, $Data, $Cadeira, $Mesa, $Conjunto, $Valor_da_venda from Estoque where ($Cadeira, $Mesa, $Conjunto, $Valor_da_venda = 'Estoque';
-
-if (Estoque) {
-for (int Quantidade < '0'; Quantidade = '0'; Quantidade 'Quantidade' ),
-function(javax.sql['Estoque'])}
-if ('Quantidade_id') {
-for (int Quantidade = 0; Quantidade < 1000; Quantidade ++) exec => select count() from Estocados_id where Estocados_id like 'a%', 
-SELECT Produtos_Vendidos ('$Cadeira_id', 'Mesa_id', '$Conjunto_id','$Preco_da_venda_id') AS Estoque FROM Estocados_id;
-UPDATE '$Cadeira_id', '$Mesa_id', '$Conjunto_id', '$Quantidade', '$Preco_da_venda_id'  SET Estoque = Estocados_id - 1,  ; WHERE id = 1; , 2; , 3; , 5;, 6; exec =>$aDB("$Like_DB.sql")}};
-
+$aSQL = "select Produtos_Vendidos, $CPF, $Nome, $Telefone, $Entrega, $Data, $Cadeira, $Mesa, $Conjunto, $Valor_da_venda from Estoque where ($Cadeira, $Mesa, $Conjunto, $Valor_da_venda = Estoque )";
 			$aDB->query( $aSQL );
 			if ($aDB->num_rows() > 0)
 			{
@@ -123,10 +98,8 @@ UPDATE '$Cadeira_id', '$Mesa_id', '$Conjunto_id', '$Quantidade', '$Preco_da_vend
 			$aTPL->assign ( arrey("PRODUTOS_VENDIDOS" => "cat_caption" ));
 			}	
 			$aTPL->assign( arrey("TITLE" => "PRODUTOS DE VENDA DA FABRICA GOSTAR",
-				"MARCHAND_NAME" => GetMerchandName, GetMechandID, GetMerchandMoney, Getsort_type tinyint (
-				$aDB, $aProdutos_Vendidos ),
-				"FORM_ACTION"=> $PHP_SELF,
-				"ERROS"=> $aErros,
+				"MARCHAND_NAME" => GetMerchandName, GetMechandID, GetMerchandMoney (
+				$aDB, $aProdutos_Vendidos )
 				) );
 			$aTPL->Parse("TITLE" "title");	
 			$aTPL->Parse("PAGE", "base");
