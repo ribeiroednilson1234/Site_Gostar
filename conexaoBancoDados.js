@@ -1,6 +1,6 @@
 package banco_dados;
 
-import java .sql.*;
+import javax.sql.*;
 
 public class conexaoBancoDados {
 	Connection comBanco;
@@ -34,7 +34,7 @@ public class conexaoBancoDados {
 -- FEITA A CONEXÃO COM O BANCO DE DADOS --
 -- Abaixo inserir os objetos da tabela Mercadorias para o banco de dados--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class MercadoriasOptionsValues {
 	private Connection conBanco;
@@ -111,7 +111,7 @@ public class MercadoriasOptionsValues {
 };
 --Abaixo os dados para a tabela Cliente--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Cliente {
 	private Connection conBanco;
@@ -186,7 +186,7 @@ public class Cliente {
 };
 --Abaixo os dados para a tabela Mercadorias--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Mercadorias {
 	private Connection conBanco;
@@ -262,7 +262,7 @@ public class Mercadorias {
 --Aqui insere para a tabela Cadeira--
 
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Cadeira {
 	private Connection conBanco;
@@ -337,7 +337,7 @@ public class Cadeira {
 };
 -- Aqui insere para a tebela Mesa--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Mesa {
 	private Connection conBanco;
@@ -412,7 +412,7 @@ public class Mesa {
 }
 -- Aqui insere para a tebela Conjunto--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Conjunto {
 	private Connection conBanco;
@@ -487,7 +487,7 @@ public class Conjunto {
 }
 -- Aqui insere para a tebela Codigo--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Codigo {
 	private Connection conBanco;
@@ -562,7 +562,7 @@ public class Codigo {
 }
 -- Aqui insere para a tebela Modelo--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Modelo {
 	private Connection conBanco;
@@ -637,7 +637,7 @@ public class Modelo {
 };
 -- Aqui insere para a tebela Preco_da_venda--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Preco_da_venda {
 	private Connection conBanco;
@@ -712,7 +712,7 @@ public class Preco_da_venda {
 };
 -- Aqui insere para a tebela Produtos_Vendidos--
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Produtos_Vendidos {
 	private Connection conBanco;
@@ -787,7 +787,7 @@ public class Produtos_Vendidos {
 }; 
 -- Aqui insere para a tabela estoque na fábrica --
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Estoque {
 	private Connection conBanco;
@@ -864,7 +864,7 @@ public class Estoque {
 };
 -- Aqui insere para a tabela Produzidos na fabrica --
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Produzidos {
 	private Connection conBanco;
@@ -941,7 +941,7 @@ public class Produzidos {
 };
 -- Aqui insere para a tabela Dispesas diversas --
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Dispesas_diversas {
 	private Connection conBanco;
@@ -1018,7 +1018,7 @@ public class Dispesas_diversas {
 };
 -- Neste espaço abaixo instere o Balanço --
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Balanco {
 	private Connection conBanco;
@@ -1095,7 +1095,7 @@ public class Balanco {
 };
 -- Tratamento para inserir na tabela Colaborador --
 packge banco_dados;
-import java.sql.*;
+import javax.sql.*;
 
 public class Colaborador {
 	private Connection conBanco;
