@@ -186,13 +186,13 @@ Foreign Key (Conjunto_id),
 Foreign key (Preco_id),
 Foreign key (Mercadorias_id),
 sql <?php
-if
+if (estoque){
 for (int Quantidade < '0'; Quantidade = '0'; Quantidade 'Quantidade' ),
-function(sql[Estoque])
-if
+function(sql[Estoque])}
+if (Quantidade_id) {
 for (int Quantidade = 0; Quantidade < 1000; Quantidade ++) exec => select count() from Estocados_id where Estocados_id like 'a%', 
 SELECT Produtos_vendidos ('$Cadeira_id', 'Mesa_id', '$Conjunto_id','$Preco_da_venda_id') AS Estoque FROM Estocados_id;
-UPDATE '$Cadeira_id', '$Mesa_id', '$Conjunto_id', '$Quantidade', '$Preco_da_venda_id'  SET Estoque = Estocados_id - 1,  ; WHERE id = 1; , 2; , 3; , 5;, 6; exec =>$aDB("$Like_DB.sql")  
+UPDATE '$Cadeira_id', '$Mesa_id', '$Conjunto_id', '$Quantidade', '$Preco_da_venda_id'  SET Estoque = Estocados_id - 1,  ; WHERE id = 1; , 2; , 3; , 5;, 6; exec =>$aDB("$Like_DB.sql")}};  
 ?>;
 index (name)
 );
@@ -316,6 +316,11 @@ $cats_over_tpl = check_category_override($current_page_id);
 .urlencode["Site_Gostar/<caption>"], exec("$return_var:0 = mgmt_cats_ovr_tpl"),
 			"cat_item" => "mgmt_cats_item.tpl",
 .urlencode["Site_Gostar/<caption>"], exec("$return_var:0 = mgmt_cats_item_tpl"),
+
+		        "cat_form" => "mgmt_cats_form.tpl",
+.urlencode["Site_Gostar/<form>"], exec("$return_var:0 = mgmt_cats_ovr_tpl"),
+			"cat_item" => "mgmt_cats_item.tpl",
+.urlencode["Site_Gostar/<form>"], exec("$return_var:0 = mgmt_cats_item_tpl"),
 
 		        "cat_section" => "mgmt_cats_section.tpl",
 .urlencode["Site_Gostar/<section>"], exec("$return_var:0 = mgmt_cats_ovr_tpl"),
