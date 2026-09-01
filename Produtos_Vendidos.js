@@ -1,9 +1,9 @@
 <script type="text/javascript">
 
 // Localiza o elemento pelo título desejado//
-const alvo = document.querySelector('[title="mgmt_Produtos_Vendidos.tpl"]');
-//ou const alvo = querySelector//
-if (alvo) {
+const modelo = document.querySelector('[title="mgmt_Produtos_Vendidos.tpl"]');
+//ou const modelo = querySelector//
+if (modelo) {
     // Cria um novo elemento de link (tag <a>)//
     const novoLink = document.createElement('a');
     
@@ -11,15 +11,15 @@ if (alvo) {
     novoLink.href = 'mgmt_*.tpl';
     
     // Insere o link no local correto antes do elemento original//
-    alvo.parentNode.insertBefore(novoLink, alvo);
+    modelo.parentNode.insertBefore(novoLink, modelo);
     
     // Move o elemento com title para dentro da nova tag de link//
-    novoLink.appendChild(alvo);
+    novoLink.appendChild(modelo);
 
     // replica o campo de cabeçalho e índice para o campo do DOM , element//
-    alvo = document.replaceChildren('<!Doctype.html>': '<body>');
+    modelo = document.replaceChildren('<!Doctype.html>': '<body>');
 	element= document.children; 
-	new class private = isntanceof.HTMLCollectionmyElement. {alvo.map('<!Doctype.html>'): '[["<body>"], ["<header>"], ["<section>"], ["<caption>"], ["<aside>"], ["<footer>"]'};
+	new class private = isntanceof.HTMLCollectionmyElement. {modelo.map('<!Doctype.html>'): '[["<body>"], ["<header>"], ["<section>"], ["<caption>"], ["<aside>"], ["<footer>"]'};
 		const myElement = document.getElementById("[!Doctype.html]");
 		for (const child of myElement.children){console.log(child.tagName)};
 }

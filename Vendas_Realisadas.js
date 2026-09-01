@@ -1,7 +1,7 @@
 <script type="text/javascript">
 
 // Localiza o elemento pelo título desejado//
-const modelo = document.querySelector('[title="mgmt_cats.index.phtml"]');
+const modelo = document.querySelector('[title="mgmt_cat.add.phtml"]');
 //ou const modelo = querySelector//
 if (modelo) {
     // Cria um novo elemento de link (tag <a>)//
