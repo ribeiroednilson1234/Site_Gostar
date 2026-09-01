@@ -1,12 +1,13 @@
 <%
-@page import="javax.servlet.http.*";
-package sistema.Site_Gostar/Fabrica/login_fabrica.html;
+@page import="jakarta.servlet.http.*";
+package sistema.Site_Gostar/Fabrica/login_fábrica.tpl;
 package banco_dados;
-import java.sql.*;
-import java.util.CPF_id;
-import java.util.Nome_id;
-import java.util.Senha_id;
-import java.model.Colaborador;
+import jakarta.json.*
+import jakarta.sql.*;
+import jakarta.util.CPF_id;
+import jakarta.util.Nome_id;
+import jakarta.util.Senha_id;
+import jakarta.model.Colaborador;
 import util.BitSet;
 import util.int;
 public class Colaborador {
@@ -38,7 +39,7 @@ strCPF_id = Converter.SoDigito(request.getParameter("txtCPF_id"));
 	strSenha_id = strCPF_id.substring(0,8);
 		
 	blnProcessar = true;
-		System.out.println("Processamento iniciado.url(){['<li><li><a href="Site_Gostar/Fabrica/fábrica.html">DENTRO DA FÁBRICA</a>"<li></li>)']};
+		System.out.println("Processamento iniciado.url(){['<li><li><a href="Site_Gostar/Fabrica/fábrica.tpl">DENTRO DA FÁBRICA</a>"<li></li>)']};
 		
 		else
 		strSenha_id = strCPF_id.substring(0,8);
